@@ -1,0 +1,25 @@
+HELP
+
+Set - Adding a new student or updating an existing student
+To add a new one:
+Required: first name, last name, ID, course name and grade (minimum one)
+You can also update the three scores at once
+For an existing update:
+Need to specify id and another minimum additional field for updating is also more possible.
+Examples of SET command structure:
+Set id=123456789 ,first name=avi ,last name =tzaiger , C language=100
+Set id=123456789 , C language=100, Computer Networks=99, last name=tzzzaiger   
+The program is not case sensitive or small in space!
+Select - Print a filtered table of data, by adding a filter.
+The filter consists of a field name, operator, value
+The field can be 1 of 7: first name, last name, id, C language, Computer Networks, CS Fundamentals, Average.
+The operator can be 1 of 6: <,<=, >,>=,=,!=
+Query examples: 
+select first name = avi
+select last name != tzaiger
+select average<=70	
+The program is not case sensitive or small in space!
+Print - Print all the data as a table
+Log - Print the log file on the screen to see which lines were lost during reception and what the faults were
+Help – Get information on the possible actions and how to use them
+Quit – Exit the program and save the changes

@@ -1,0 +1,209 @@
+Line 1:
+tami,tzaiger,3415356544,Computer Networks,90
+
+ERORR 2: id is not valid.
+===================================
+Line 4:
+tami,roze2ntal,866354537,CS Fundamentals,100
+
+ERORR 1: last name is not valid.
+===================================
+Line 1:
+tami,tzaiger,3415356544,Computer Networks,90
+
+ERORR 2: id is not valid.
+===================================
+Line 4:
+tami,roze2ntal,866354537,CS Fundamentals,100
+
+ERORR 1: last name is not valid.
+===================================
+Line 0:
+yedid,cohשששen,208208208,clanguage,100
+
+ERORR 1: last name is not valid.
+===================================
+Line 0:
+morgan,freeman,757365759,clanguage,135400
+
+ERORR 4: grade is not valid.
+===================================
+Line 1:
+yedid,cohen,208208208,clanguage,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 3:
+yedid,cohen,208208208,csfundamentals,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 6:
+tami,rozental,806354537,csfundamentals,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 22:
+cameron,diaz,65564632,clanguage,96
+
+ERORR 2: id is not valid.
+===================================
+Line 24:
+cameron,diaz,65564632,csfundamentals,73
+
+ERORR 2: id is not valid.
+===================================
+Line 46:
+cameron,diaz,65564832,computernetworks,82
+
+ERORR 2: id is not valid.
+===================================
+Line 0:
+morgan,freeman,757365759,clanguage,135400
+
+ERORR 4: grade is not valid.
+===================================
+Line 1:
+yedid,cohen,208208208,clanguage,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 3:
+yedid,cohen,208208208,csfundamentals,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 6:
+tami,rozental,806354537,csfundamentals,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 22:
+cameron,diaz,65564632,clanguage,96
+
+ERORR 2: id is not valid.
+===================================
+Line 24:
+cameron,diaz,65564632,csfundamentals,73
+
+ERORR 2: id is not valid.
+===================================
+Line 46:
+cameron,diaz,65564832,computernetworks,82
+
+ERORR 2: id is not valid.
+===================================
+
+================
+================
+Line 0:
+morgan,freeman,757365759,clanguage,135400
+
+ERORR 4: grade is not valid.
+===================================
+Line 1:
+yedid,cohen,208208208,clanguage,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 3:
+yedid,cohen,208208208,csfundamentals,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 6:
+tami,rozental,806354537,csfundamentals,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 22:
+cameron,diaz,65564632,clanguage,96
+
+ERORR 2: id is not valid.
+===================================
+Line 24:
+cameron,diaz,65564632,csfundamentals,73
+
+ERORR 2: id is not valid.
+===================================
+Line 46:
+cameron,diaz,65564832,computernetworks,82
+
+ERORR 2: id is not valid.
+===================================
+
+================
+================
+Line 0:
+morgan,freeman,757365759,clanguage,135400
+
+ERORR 4: grade is not valid.
+===================================
+Line 1:
+yedid,cohen,208208208,clanguage,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 3:
+yedid,cohen,208208208,csfundamentals,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 6:
+tami,rozental,806354537,csfundamentals,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 22:
+cameron,diaz,65564632,clanguage,96
+
+ERORR 2: id is not valid.
+===================================
+Line 24:
+cameron,diaz,65564632,csfundamentals,73
+
+ERORR 2: id is not valid.
+===================================
+Line 46:
+cameron,diaz,65564832,computernetworks,82
+
+ERORR 2: id is not valid.
+===================================
+
+================
+================
+Line 0:
+morgan,freeman,757365759,clanguage,135400
+
+ERORR 4: grade is not valid.
+===================================
+Line 1:
+yedid,cohen,208208208,clanguage,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 3:
+yedid,cohen,208208208,csfundamentals,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 6:
+tami,rozental,806354537,csfundamentals,100
+
+ERORR 4: grade is not valid.
+===================================
+Line 22:
+cameron,diaz,65564632,clanguage,96
+
+ERORR 2: id is not valid.
+===================================
+Line 24:
+cameron,diaz,65564632,csfundamentals,73
+
+ERORR 2: id is not valid.
+===================================
+Line 46:
+cameron,diaz,65564832,computernetworks,82
+
+ERORR 2: id is not valid.
+===================================

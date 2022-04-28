@@ -1,0 +1,14 @@
+﻿  dataManagement.c
+  main.c
+  queries.c
+C:\Users\USER\Desktop\‏‏‏‏‏‏project c 6\Project C v6\Project C v6\queries.c(12,14): warning C4267: '=': conversion from 'size_t' to 'char', possible loss of data
+C:\Users\USER\Desktop\‏‏‏‏‏‏project c 6\Project C v6\Project C v6\queries.c(57,57): warning C4133: 'function': incompatible types - from 'float *' to 'char *'
+C:\Users\USER\Desktop\‏‏‏‏‏‏project c 6\Project C v6\Project C v6\queries.c(56,24): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  utils.c
+C:\Users\USER\Desktop\‏‏‏‏‏‏project c 6\Project C v6\Project C v6\utils.c(52,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\USER\Desktop\‏‏‏‏‏‏project c 6\Project C v6\Project C v6\utils.c(59,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  validation.c
+C:\Users\USER\Desktop\‏‏‏‏‏‏project c 6\Project C v6\Project C v6\validation.c(60,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+C:\Users\USER\Desktop\‏‏‏‏‏‏project c 6\Project C v6\Project C v6\validation.c(89): warning C4716: 'logger': must return a value
+  Project C v6.vcxproj -> C:\Users\USER\Desktop\‏‏‏‏‏‏project c 6\Project C v6\x64\Debug\Project C v6.exe
