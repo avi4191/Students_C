@@ -2,65 +2,315 @@
 
 
 void selectCommand(Manager* manager, char* input) {
-	char codeKey, * token, temp[50], op, len, val[50];
-	if (strlen(input) > 99)
+	//parser and validation
+	if (strlen(input) > MAXQUERY) {
 		printf("Invalid length query");
+		return;
+	}
+	char *token, temp[MAXQUERY], len, val[MAXNAME];
 	strcpy(temp, input);
-
 	token = strtok(temp, "<>=!");
-	codeKey = getCodeByKey(token);
+	FieldCodes codeField = getCodeByField(token);
 	len =(int) strlen(token);
-	if (codeKey == -1)
+	if (codeField == notValidField) {
 		printf("\'%s\' is not valid property!", token);
-	op = getOperator(input + len);
-	if (op == 0)
+		return;
+	}
+	OperatorCodes op = getOperator(input + len);
+	if (op == notValidOperator) {
 		printf("Invalid operator!");
-	if (op <= 3)
+		return;
+	}
+	if (op <= 3)//if length operator =1
 		strcpy(val, input + len + 1);
-	else
+	else//if length operator =2
 		strcpy(val, input + len + 2);
-	switch (codeKey)
+	
+	//handles by field
+	switch (codeField)
 	{  
-	case 0:
+	case firstName:
 		if (isValidName(val))
 			printSelected(manager, &filterByFirstName, op, val);
+		else
+		{
+			printf("value \'%s\' is not valid name!", val);
+			return;
+		}
 		break;
-	case 1:
+	case lastName:
 		if (isValidName(val))
 			printSelected(manager, &filterByLastName, op, val);
+		else
+		{
+			printf("value \'%s\' is not valid name!", val);
+			return;
+		}
 		break;
-	case 2:
+	case ID:
 		if (isValidId(val))
 			printSelected(manager, &filterByID, op, val);
+		else
+		{
+			printf("value \'%s\' is not valid ID!", val);
+			return;
+		}
 		break;
-	case 3:
+	case grade1:
 		if (isValidGrade(val)) {
 			val[0] = atoi(val);
 			printSelected(manager, &filterByGrade1, op, val);
-			break;
 		}
-	case 4:
+		else
+		{
+			printf("value \'%s\' is not valid grade!", val);
+			return;
+		}
+		break;
+	case grade2:
 		if (isValidGrade(val)) {
 			val[0] = atoi(val);
 			printSelected(manager, &filterByGrade2, op, val);
-			break;
 		}
-	case 5:
+		else
+		{
+			printf("value \'%s\' is not valid grade!", val);
+			return;
+		}
+		break;
+	case grade3:
 		if (isValidGrade(val)) {
 			val[0] = atoi(val);
 			printSelected(manager, &filterByGrade3, op, val);
-			break;
 		}
-	case 6:
+		else
+		{
+			printf("value \'%s\' is not valid grade!", val);
+			return;
+		}
+		break;
+	case average:
 		if (1) {
 			float tempVal =(float) atof(val);
 			printSelected(manager, &filterByAverage, op, &tempVal);
-			break;
+		}
+		else
+		{
+			printf("value \'%s\' is not valid average!", val);
+			return;
 		}
 		break;
-	default:
+	}
+}
+
+int filterByFirstName(Student* student, char op, char* value) {
+	switch (op)
+	{
+	case equal:
+		if (strcmp(student->firstName, value) == 0)
+			return 1;
+		break;
+	case bigger:
+		if (strcmp(student->firstName, value) > 0)
+			return 1;
+	case smaller:
+		if (strcmp(student->firstName, value) < 0)
+			return 1;
+	case biggerOrEqual:
+		if (strcmp(student->firstName, value) >= 0)
+			return 1;
+	case smallerOrEqual:
+		if (strcmp(student->firstName, value) <= 0)
+			return 1;
+	case notEqual:
+		if (strcmp(student->firstName, value) != 0)
+			return 1;
+	}
+	return 0;
+}
+int filterByLastName(Student* student, char op, char* value) {
+	switch (op)
+	{
+	case equal:
+		if (strcmp(student->lastName, value) == 0)
+			return 1;
+		break;
+	case bigger:
+		if (strcmp(student->lastName, value) > 0)
+			return 1;
+		break;
+	case smaller:
+		if (strcmp(student->lastName, value) < 0)
+			return 1;
+			break;
+	case biggerOrEqual:
+		if (strcmp(student->lastName, value) >= 0)
+			return 1;
+			break;
+	case smallerOrEqual:
+		if (strcmp(student->lastName, value) <= 0)
+			return 1;
+		break;
+	case notEqual:
+		if (strcmp(student->lastName, value) != 0)
+			return 1;
 		break;
 	}
+	return 0;
+}
+int filterByID(Student* student, char op, char* value) {
+	switch (op)
+	{
+	case equal:
+		if (strcmp(student->id, value) == 0)
+			return 1;
+		break;
+	case bigger:
+		if (strcmp(student->id, value) > 0)
+			return 1;
+		break;
+	case smaller:
+		if (strcmp(student->id, value) < 0)
+			return 1;
+		break;
+	case biggerOrEqual:
+		if (strcmp(student->id, value) >= 0)
+			return 1;
+		break;
+	case smallerOrEqual:
+		if (strcmp(student->id, value) <= 0)
+			return 1;
+		break;
+	case notEqual:
+		if (strcmp(student->id, value) != 0)
+			return 1;
+		break;
+	}
+	return 0;
+}
+int filterByGrade1(Student* student, char op, char* value) {
+	char ret = 0, gradeIndex = 0;
+	switch (op)
+	{
+	case equal:
+		if (student->grades[gradeIndex] == *value)
+			ret = 1;
+		break;
+	case bigger:
+		if (student->grades[gradeIndex] > *value)
+			ret = 1;
+		break;
+	case smaller:
+		if (student->grades[gradeIndex] < *value)
+			ret = 1;
+		break;
+	case biggerOrEqual:
+		if (student->grades[gradeIndex] >= *value)
+			ret = 1;
+		break;
+	case smallerOrEqual:
+		if (student->grades[gradeIndex] <= *value)
+			ret = 1;
+		break;
+	case notEqual:
+		if (student->grades[gradeIndex] != *value)
+			ret = 1;
+		break;
+	}
+	return ret;
+}
+int filterByGrade2(Student* student, char op, char* value) {
+	char ret = 0, gradeIndex = 1;
+	switch (op)
+	{
+	case equal:
+		if (student->grades[gradeIndex] == *value)
+			ret = 1;
+		break;
+	case bigger:
+		if (student->grades[gradeIndex] > *value)
+			ret = 1;
+		break;
+	case smaller:
+		if (student->grades[gradeIndex] < *value)
+			ret = 1;
+		break;
+	case biggerOrEqual:
+		if (student->grades[gradeIndex] >= *value)
+			ret = 1;
+		break;
+	case smallerOrEqual:
+		if (student->grades[gradeIndex] <= *value)
+			ret = 1;
+		break;
+	case notEqual:
+		if (student->grades[gradeIndex] != *value)
+			ret = 1;
+		break;
+	}
+	return ret;
+}
+int filterByGrade3(Student* student, char op, char* value) {
+	char ret = 0, gradeIndex = 2;
+	switch (op)
+	{
+	case equal:
+		if (student->grades[gradeIndex] == *value)
+			ret = 1;
+		break;
+	case bigger:
+		if (student->grades[gradeIndex] > *value)
+			ret = 1;
+		break;
+	case smaller:
+		if (student->grades[gradeIndex] < *value)
+			ret = 1;
+		break;
+	case biggerOrEqual:
+		if (student->grades[gradeIndex] >= *value)
+			ret = 1;
+		break;
+	case smallerOrEqual:
+		if (student->grades[gradeIndex] <= *value)
+			ret = 1;
+		break;
+	case notEqual:
+		if (student->grades[gradeIndex] != *value)
+			ret = 1;
+		break;
+	}
+	return ret;
+}
+int filterByAverage(Student* student, char op, float* value) {
+	char ret = 0, gradeIndex = 0;
+	switch (op)
+	{
+	case equal:
+		if (student->average == *value)
+			ret = 1;
+		break;
+	case bigger:
+		if (student->average > *value)
+			ret = 1;
+		break;
+	case smaller:
+		if (student->average < *value)
+			ret = 1;
+		break;
+	case biggerOrEqual:
+		if (student->average >= *value)
+			ret = 1;
+		break;
+	case smallerOrEqual:
+		if (student->average <= *value)
+			ret = 1;
+		break;
+	case notEqual:
+		if (student->average != *value)
+			ret = 1;
+		break;
+	}
+	return ret;
 }
 
 void printSelected(Manager* manager, int(*fn)(Student*, char, void*), char op, void* val) {
@@ -76,221 +326,7 @@ void printSelected(Manager* manager, int(*fn)(Student*, char, void*), char op, v
 		ptr = ptr->next;
 	}
 	if (lines)
-		printf("\nsum = %d result", lines);
+		printf("\n%d items", lines);
 	else
 		printf("no results found!");
-}
-
-
-int filterByFirstName(Student* student, char op, void* value) {
-	char ret = 0, * val = (char*)value;
-	switch (op)
-	{
-	case 1:
-		if (strcmp(student->firstName, val) == 0)
-			ret = 1;
-		break;
-	case 2:
-		if (strcmp(student->firstName, val) > 0)
-			return 1;
-	case 3:
-		if (strcmp(student->firstName, val) < 0)
-			return 1;
-	case 4:
-		if (strcmp(student->firstName, val) >= 0)
-			return 1;
-	case 5:
-		if (strcmp(student->firstName, val) <= 0)
-			return 1;
-	case 6:
-		if (strcmp(student->firstName, val) != 0)
-			return 1;
-	}
-	return ret;
-}
-int filterByLastName(Student* student, char op, void* value) {
-	char ret = 0;
-	switch (op)
-	{
-	case 1:
-		if (strcmp(student->lastName, value) == 0)
-			ret = 1;
-		break;
-	case 2:
-		if (strcmp(student->lastName, value) > 0)
-			ret = 1;
-		break;
-	case 3:
-		if (strcmp(student->lastName, value) < 0)
-			ret = 1;
-		break;
-	case 4:
-		if (strcmp(student->lastName, value) >= 0)
-			ret = 1;
-		break;
-	case 5:
-		if (strcmp(student->lastName, value) <= 0)
-			ret = 1;
-		break;
-	case 6:
-		if (strcmp(student->lastName, value) != 0)
-			ret = 1;
-		break;
-	}
-	return ret;
-}
-int filterByID(Student* student, char op, void* value) {
-	char ret = 0;
-	switch (op)
-	{
-	case 1:
-		if (strcmp(student->id, value) == 0)
-			ret = 1;
-		break;
-	case 2:
-		if (strcmp(student->id, value) > 0)
-			ret = 1;
-		break;
-	case 3:
-		if (strcmp(student->id, value) < 0)
-			ret = 1;
-		break;
-	case 4:
-		if (strcmp(student->id, value) >= 0)
-			ret = 1;
-		break;
-	case 5:
-		if (strcmp(student->id, value) <= 0)
-			ret = 1;
-		break;
-	case 6:
-		if (strcmp(student->id, value) != 0)
-			ret = 1;
-		break;
-	}
-	return ret;
-}
-int filterByGrade1(Student* student, char op, void* value) {
-	char ret = 0, gradeIndex = 0;
-	switch (op)
-	{
-	case 1:
-		if (student->grades[gradeIndex] == *((char*)value))
-			ret = 1;
-		break;
-	case 2:
-		if (student->grades[gradeIndex] > *((char*)value))
-			ret = 1;
-		break;
-	case 3:
-		if (student->grades[gradeIndex] < *((char*)value))
-			ret = 1;
-		break;
-	case 4:
-		if (student->grades[gradeIndex] >= *((char*)value))
-			ret = 1;
-		break;
-	case 5:
-		if (student->grades[gradeIndex] <= *((char*)value))
-			ret = 1;
-		break;
-	case 6:
-		if (student->grades[gradeIndex] != *((char*)value))
-			ret = 1;
-		break;
-	}
-	return ret;
-}
-int filterByGrade2(Student* student, char op, void* value) {
-	char ret = 0, gradeIndex = 1;
-	switch (op)
-	{
-	case 1:
-		if (student->grades[gradeIndex] == *((char*)value))
-			ret = 1;
-		break;
-	case 2:
-		if (student->grades[gradeIndex] > *((char*)value))
-			ret = 1;
-		break;
-	case 3:
-		if (student->grades[gradeIndex] < *((char*)value))
-			ret = 1;
-		break;
-	case 4:
-		if (student->grades[gradeIndex] >= *((char*)value))
-			ret = 1;
-		break;
-	case 5:
-		if (student->grades[gradeIndex] <= *((char*)value))
-			ret = 1;
-		break;
-	case 6:
-		if (student->grades[gradeIndex] != *((char*)value))
-			ret = 1;
-		break;
-	}
-	return ret;
-}
-int filterByGrade3(Student* student, char op, void* value) {
-	char ret = 0, gradeIndex = 2;
-	switch (op)
-	{
-	case 1:
-		if (student->grades[gradeIndex] == *((char*)value))
-			ret = 1;
-		break;
-	case 2:
-		if (student->grades[gradeIndex] > *((char*)value))
-			ret = 1;
-		break;
-	case 3:
-		if (student->grades[gradeIndex] < *((char*)value))
-			ret = 1;
-		break;
-	case 4:
-		if (student->grades[gradeIndex] >= *((char*)value))
-			ret = 1;
-		break;
-	case 5:
-		if (student->grades[gradeIndex] <= *((char*)value))
-			ret = 1;
-		break;
-	case 6:
-		if (student->grades[gradeIndex] != *((char*)value))
-			ret = 1;
-		break;
-	}
-	return ret;
-}
-int filterByAverage(Student* student, char op, float* value) {
-	char ret = 0, gradeIndex = 0;
-	switch (op)
-	{
-	case 1:
-		if (student->average == *value)
-			ret = 1;
-		break;
-	case 2:
-		if (student->average > *value)
-			ret = 1;
-		break;
-	case 3:
-		if (student->average < *value)
-			ret = 1;
-		break;
-	case 4:
-		if (student->average >= *value)
-			ret = 1;
-		break;
-	case 5:
-		if (student->average <= *value)
-			ret = 1;
-		break;
-	case 6:
-		if (student->average != *value)
-			ret = 1;
-		break;
-	}
-	return ret;
 }

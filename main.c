@@ -17,7 +17,7 @@ void main() {
 	else
 	{
 		printf("Error getting data from file!");
-		exit(1);
+		exit(fileEmptyErorr);
 	}
 }
 

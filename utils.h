@@ -18,11 +18,11 @@ void printAll(Manager* manager);
 
 //parameters: string that starts with operator
 //return: operator code or 0 if not valid operator
-int getOperator(char* str);
+OperatorCodes getOperator(char* str);
 
 //parameters: name of field 
 //return: code of field
-unsigned char getCodeByKey(char* str);
+FieldCodes getCodeByField(char* str);
 
 void printLog(void);
 void printHelp(void);

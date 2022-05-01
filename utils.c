@@ -63,40 +63,40 @@ void cleanSpaces(char* str) {
 	str[j] = '\0';
 }
 
-int getOperator(char* str) {
+OperatorCodes getOperator(char* str) {
 	if (str[0] == '=')
-		return 1;
+		return equal;
 	if (str[0] == '>')
 		if (str[1] == '=')
-			return 4;
+			return biggerOrEqual;
 		else
-			return 2;
+			return bigger;
 	if (str[0] == '<')
 		if (str[1] == '=')
-			return 5;
+			return smallerOrEqual;
 		else
-			return 3;
+			return smaller;
 	if (str[0] == '!' && str[1] == '=')
-		return 6;
-	return 0;
+		return notEqual;
+	return notValidOperator;
 }
 
-unsigned char getCodeByKey(char* str) {
+FieldCodes getCodeByField(char* str) {
 	if (strcmp(str, "firstname") == 0)
-		return 0;
+		return firstName;
 	if (strcmp(str, "lastname") == 0)
-		return 1;
+		return lastName;
 	if (strcmp(str, "id") == 0)
-		return 2;
+		return ID;
 	if (strcmp(str, COURSE1) == 0)
-		return 3;
+		return grade1;
 	if (strcmp(str, COURSE2) == 0)
-		return 4;
+		return grade2;
 	if (strcmp(str, COURSE3) == 0)
-		return 5;
+		return grade3;
 	if (strcmp(str, "average") == 0)
-		return 6;
-	return -1;
+		return average;
+	return notValidField;
 }
 
 void printLog() {

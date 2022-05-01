@@ -48,19 +48,19 @@ int insertLine(char* line, int numLine, FILE* log, Manager* manager) {
 	if (strlen(token) < 4) strcpy(grade, token);
 
 	// validation
-	erorrs[0] = isValidName(fname);
-	erorrs[1] = isValidName(lname);
-	erorrs[2] = isValidId(id);
-	idCourse = erorrs[3] = getIdCourseByName(course);
-	erorrs[4] = isValidGrade(grade);
-	erorrs[5] = 1;
+	erorrs[firstNameErorr] = isValidName(fname);
+	erorrs[lastNameErorr] = isValidName(lname);
+	erorrs[IDErorr] = isValidId(id);
+	erorrs[courseErorr] = idCourse = getIdCourseByName(course);
+	erorrs[gradeErorr] = isValidGrade(grade);
+	erorrs[namesNotEqualErorr] = 1;
 
-	if (erorrs[0] && erorrs[1] && erorrs[2] && erorrs[3] && erorrs[4]) {//is valid case
+	if (erorrs[firstNameErorr]&&erorrs[lastNameErorr] &&erorrs[IDErorr]&&erorrs[courseErorr]&&erorrs[gradeErorr]) {//is valid case
 		result = findById(manager, id);//check if exist?
 		if (result == NULL)//add new
 			result = addStudent(manager, fname, lname, id, TRUE);
 		else if (strcmp(fname, result->firstName) != 0 && strcmp(lname, result->lastName) != 0) {//if names not equal
-			erorrs[5] = 0;//erorr 6 - names not equal
+			erorrs[namesNotEqualErorr] = 0;
 			logger(log, erorrs, line, numLine);
 			return 0;
 		}
@@ -178,53 +178,56 @@ void addToListInOrder(Manager* manager, Student* student) {
 }
 
 void setCommand(Manager* manager, char* input) {
-	char fname[MAXNAME] = { 0 }, lname[MAXNAME] = { 0 }, id[MAXNAME] = { 0 }, course[MAXFIELD] = { 0 }, grade1[5] = { 0 }, grade2[5] = { 0 }, grade3[5] = { 0 }, * token, temp;
+	char fname[MAXNAME] = { 0 }, lname[MAXNAME] = { 0 }, id[MAXNAME] = { 0 }, course[MAXFIELD] = { 0 }, grade1[5] = { 0 }, grade2[5] = { 0 }, grade3[5] = { 0 }, * token;
 	char* arr[] = { fname,lname,id,grade1,grade2,grade3 };
 	Student* result = NULL;
+	FieldCodes temp;
+	
+	//parser all fields
 	token = strtok(input, "=");
 	while (token != NULL)
 	{
-		printf("1-%s\n", token);
-		temp = getCodeByKey(token);
-		if (temp == -1 || temp == 6) {
-			printf("Unknown field!");
+		temp = getCodeByField(token);
+		if (temp == notValidField || temp == average) {
+			printf("\'%s\' is not valid field!", token);
 			return;
 		}
 		token = strtok(NULL, ",");
 		strcpy(arr[temp], token);
-		printf("2-%s\n", token);
 		token = strtok(NULL, "=");
 	}
 
+	//validation
 	if (*id == 0) {
 		printf("id is requird!");
-		return;
-	}
-
-	if (!isValidName(fname)) {
-		printf("invalid first name!");
-		return;
-	}
-	if (!isValidName(lname)) {
-		printf("invalid last name!");
 		return;
 	}
 	if (!isValidId(id)) {
 		printf("invalid id!");
 		return;
 	}
+	if (*fname!=0 && !isValidName(fname)) {
+		printf("invalid first name!");
+		return;
+	}
+	if (*lname!=0 && !isValidName(lname)) {
+		printf("invalid last name!");
+		return;
+	}
 	if ((*grade1 != 0 && !isValidGrade(grade1)) || (*grade2 != 0 && !isValidGrade(grade2)) || (*grade3 != 0 && !isValidGrade(grade3))) {
 		printf("invalid grade!");
 		return;
 	}
+
+	//check if is update or add
 	result = findById(manager, id);
 	if (result == NULL) {
 		if (*fname == 0) {
-			printf("first name is requird!");
+			printf("for add student: first name is requird!");
 			return;
 		}
 		if (*lname == 0) {
-			printf("last name is requird!");
+			printf("for add student: last name is requird!");
 			return;
 		}
 		result = addStudent(manager, fname, lname, id, FALSE);
@@ -237,6 +240,8 @@ void setCommand(Manager* manager, char* input) {
 		if (*fname != 0 || *lname != 0)
 			editNames(manager, result, fname, lname);
 	}
+
+	//update grades
 	for (int i = 4; i < 7; i++)
 		if (arr[i][0] != 0)
 			updateGrade(result, i - 3, atoi(arr[i]));
@@ -286,7 +291,7 @@ void quit(Manager* manager) {
 	if (manager->changes > 0 || manager->isSortedFile == 0 || manager->fallenRows > 0)
 		saveChanges(manager);
 	freeMemory(manager);
-	exit(0);
+	exit(successfulExit);
 }
 
 void freeMemory(Manager* manager) {

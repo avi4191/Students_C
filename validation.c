@@ -43,7 +43,7 @@ int getIdCourseByName(char* course) {
 void checkFile(FILE* file) {
 	if (file == NULL) {
 		printf("open file erorr!!!\n");
-		exit(1);
+		exit(fileOpenErorr);
 	}
 }
 
@@ -57,7 +57,7 @@ void checkAllocation(void* x, Manager *manager,void *ptrToFree1, void* ptrToFree
 		if (manager->changes > 0 || manager->isSortedFile == 0 || manager->fallenRows > 0)
 			saveChanges(manager);
 		freeMemory(manager);
-		exit(2);
+		exit(allocationErorr);
 	}
 }
 
