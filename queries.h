@@ -5,7 +5,7 @@ void selectCommand(Manager* manager, char* input);
 
 //Prints the filtered list
 //parameters: check func,operator code,value
-void printSelected(Manager* manager, int(*fn)(Student*, char, void*), char op, char* val);
+void printSelected(Manager* manager, int(*fn)(Student*, char, void*), char op, void* val);
 
 //special functions that check specific field
 //parameters: student for check, operator code, value for comparing

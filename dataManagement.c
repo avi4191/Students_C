@@ -78,11 +78,11 @@ int insertLine(char* line, int numLine, FILE* log, Manager* manager) {
 Student* addStudent(Manager* manager, char* fname, char* lname, char* id, unsigned char isFromFile) {
 	//allocation
 	Student* temp = (Student*)malloc(sizeof(Student));
-	checkAllocation(temp);
+	checkAllocation(temp,manager,NULL,NULL);
 	temp->firstName = (char*)malloc((strlen(fname) + 1) * sizeof(char));
-	checkAllocation(temp->firstName);
+	checkAllocation(temp->firstName,manager,temp,NULL);
 	temp->lastName = (char*)malloc((strlen(lname) + 1) * sizeof(char));
-	checkAllocation(temp->lastName);
+	checkAllocation(temp->lastName,manager,temp->firstName,temp);
 
 	//copy 3 fields
 	strcpy(temp->firstName, fname);
@@ -119,7 +119,7 @@ void editNames(Manager* manager, Student* student, char* fname, char* lname) {
 	if (*fname != 0 && strcmp(student->firstName, fname) != 0) {
 		free(student->firstName);
 		char* tempFN = (char*)malloc(strlen(fname) + 1 * sizeof(char));
-		checkAllocation(tempFN);
+		checkAllocation(tempFN, manager,NULL,NULL);
 		strcpy(tempFN, fname);
 		student->firstName = tempFN;
 	}
@@ -137,7 +137,7 @@ void editNames(Manager* manager, Student* student, char* fname, char* lname) {
 		}
 		free(student->lastName);
 		char* tempLN = (char*)malloc(strlen(fname) + 1 * sizeof(char));
-		checkAllocation(tempLN);
+		checkAllocation(tempLN,manager,NULL,NULL);
 		strcpy(tempLN, lname);
 		student->lastName = tempLN;
 		if (flag)

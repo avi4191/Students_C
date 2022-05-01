@@ -49,14 +49,14 @@ void printAll(Manager* manager) {
 }
 
 void toLowerCase(char* str) {
-	int len = strlen(str);
+	int len =(int) strlen(str);
 	for (int i = 0; i < len; i++)
 		if (str[i] < 91 && str[i]>64)
 			str[i] += 32;
 }
 
 void cleanSpaces(char* str) {
-	int len = strlen(str), i, j;
+	int len =(int) strlen(str), i, j;
 	for (i = 0, j = 0; i < len; i++)
 		if (str[i] != 32)
 			str[j++] = str[i];

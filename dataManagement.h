@@ -21,3 +21,4 @@ Student* findPrev(Manager* manager, Student* student);
 void quit(Manager* Manager);
 void freeMemory(Manager* Manager);
 void saveChanges(Manager* Manager);
+

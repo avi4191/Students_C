@@ -47,17 +47,23 @@ void checkFile(FILE* file) {
 	}
 }
 
-void checkAllocation(void* x) {
+void checkAllocation(void* x, Manager *manager,void *ptrToFree1, void* ptrToFree2) {
 	if (x == NULL) {
 		printf("allocation erorr!!!\n");
+		if (ptrToFree1 != NULL)
+			free(ptrToFree1);
+		if (ptrToFree2 != NULL)
+			free(ptrToFree2);
+		if (manager->changes > 0 || manager->isSortedFile == 0 || manager->fallenRows > 0)
+			saveChanges(manager);
+		freeMemory(manager);
 		exit(2);
 	}
-	return;
 }
 
 void checkLongLine(char* line, FILE* file) {
 	char c = 'a';
-	int len = strlen(line);
+	int len = (int) strlen(line);
 	if (line[len - 1] != '\n' && line[len - 1] != EOF)
 		while (c != '\n' && c != EOF)
 			c = fgetc(file);
@@ -71,7 +77,7 @@ void checkIsSortedFile(Manager* manager, FILE* file) {
 	else  rewind(file);
 }
 
-int logger(FILE* log, unsigned char* erorrs, char* line, int numOfLine) {
+void logger(FILE* log, unsigned char* erorrs, char* line, int numOfLine) {
 	fprintf(log, "Line %d:\n%s\n", numOfLine, line);
 	if (erorrs[0] == 0)
 		fprintf(log, "ERORR %d: first name is not valid.\n", 0);

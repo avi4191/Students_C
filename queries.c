@@ -9,7 +9,7 @@ void selectCommand(Manager* manager, char* input) {
 
 	token = strtok(temp, "<>=!");
 	codeKey = getCodeByKey(token);
-	len = strlen(token);
+	len =(int) strlen(token);
 	if (codeKey == -1)
 		printf("\'%s\' is not valid property!", token);
 	op = getOperator(input + len);
@@ -20,7 +20,7 @@ void selectCommand(Manager* manager, char* input) {
 	else
 		strcpy(val, input + len + 2);
 	switch (codeKey)
-	{
+	{  
 	case 0:
 		if (isValidName(val))
 			printSelected(manager, &filterByFirstName, op, val);
@@ -53,7 +53,7 @@ void selectCommand(Manager* manager, char* input) {
 		}
 	case 6:
 		if (1) {
-			float tempVal = atof(val);
+			float tempVal =(float) atof(val);
 			printSelected(manager, &filterByAverage, op, &tempVal);
 			break;
 		}
@@ -63,7 +63,7 @@ void selectCommand(Manager* manager, char* input) {
 	}
 }
 
-void printSelected(Manager* manager, int(*fn)(Student*, char, void*), char op, char* val) {
+void printSelected(Manager* manager, int(*fn)(Student*, char, void*), char op, void* val) {
 	Student* ptr = manager->head;
 	int lines = 0;
 	printHeader();
