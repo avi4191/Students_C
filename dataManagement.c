@@ -29,42 +29,41 @@ int createListFromTable(Manager* manager) {
 }
 
 int insertLine(char* line, int numLine, FILE* log, Manager* manager) {
-	char fname[MAXNAME + 1], lname[MAXNAME + 1], id[MAXNAME + 1], course[MAXFIELD + 1], grade[5], * token, temp[MAXLINE + 1];
-	unsigned char idCourse, erorrs[6];
+	//char fname[MAXNAME + 1], lname[MAXNAME + 1], id[MAXNAME + 1], course[MAXNAME+1], grade[MAXNAME+1],
+	char *column_p[5],* token, temp[MAXLINE + 1];
+	unsigned char idCourse, erorrs[6], i = 0;
 	Student* result = NULL;
 	cleanSpaces(line);
 	toLowerCase(line);
 	strcpy(temp, line);
 	// parsers of the line
 	token = strtok(temp, ",");
-	if (strlen(token) < MAXFIELD) strcpy(fname, token);
-	token = strtok(NULL, ",");
-	if (strlen(token) < MAXFIELD) strcpy(lname, token);
-	token = strtok(NULL, ",");
-	if (strlen(token) < MAXFIELD) strcpy(id, token);
-	token = strtok(NULL, ",");
-	if (strlen(token) < MAXFIELD) strcpy(course, token);
-	token = strtok(NULL, ",");
-	if (strlen(token) < 4) strcpy(grade, token);
-
+	while (token!=NULL)
+	{
+		if (strlen(token) < MAXFIELD)
+			column_p[i] = token;
+		token = strtok(NULL, ",");
+		i++;
+	}
+	
 	// validation
-	erorrs[firstNameErorr] = isValidName(fname);
-	erorrs[lastNameErorr] = isValidName(lname);
-	erorrs[IDErorr] = isValidId(id);
-	erorrs[courseErorr] = idCourse = getIdCourseByName(course);
-	erorrs[gradeErorr] = isValidGrade(grade);
+	erorrs[firstNameErorr] = isValidName(column_p[firstName]);
+	erorrs[lastNameErorr] = isValidName(column_p[lastName]);
+	erorrs[IDErorr] = isValidId(column_p[ID]);
+	erorrs[courseErorr] = idCourse = getIdCourseByName(column_p[course]);
+	erorrs[gradeErorr] = isValidGrade(column_p[grade]);
 	erorrs[namesNotEqualErorr] = 1;
 
 	if (erorrs[firstNameErorr]&&erorrs[lastNameErorr] &&erorrs[IDErorr]&&erorrs[courseErorr]&&erorrs[gradeErorr]) {//is valid case
-		result = findById(manager, id);//check if exist?
+		result = findById(manager, column_p[ID]);//check if exist?
 		if (result == NULL)//add new
-			result = addStudent(manager, fname, lname, id, TRUE);
-		else if (strcmp(fname, result->firstName) != 0 && strcmp(lname, result->lastName) != 0) {//if names not equal
+			result = addStudent(manager, column_p[firstName], column_p[lastName], column_p[ID], TRUE);
+		else if (strcmp(column_p[firstName], result->firstName) != 0 && strcmp(column_p[lastName], result->lastName) != 0) {//if names not equal
 			erorrs[namesNotEqualErorr] = 0;
 			logger(log, erorrs, line, numLine);
 			return 0;
 		}
-		updateGrade(result, idCourse, atoi(grade));
+		updateGrade(result, idCourse, atoi(column_p[grade]));
 	}
 	else { // is not valid case
 		logger(log, erorrs, line, numLine);//erorr 1-5

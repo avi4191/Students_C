@@ -34,6 +34,7 @@ typedef struct {
 //codes in program
 typedef enum { allocationErorr, fileOpenErorr, fileEmptyErorr, successfulExit} ExitCodes;
 typedef enum {notValidField =-1, firstName,lastName,ID, grade1,grade2,grade3,average} FieldCodes;
+typedef enum {course=3, grade=4} columCodes;// 0,1,2 is same like field codes^
 typedef enum {notValidOperator,equal,	bigger,	smaller,	biggerOrEqual,	smallerOrEqual,	notEqual} OperatorCodes;
 typedef enum {firstNameErorr, lastNameErorr,  IDErorr, courseErorr, gradeErorr, namesNotEqualErorr} ErorrValidationCodes;
 typedef enum { EMPTY =-1, FALSE, TRUE} general;

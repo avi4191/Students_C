@@ -207,3 +207,1164 @@ cameron,diaz,65564832,computernetworks,82
 
 ERORR 2: id is not valid.
 ===================================
+Line 0:
+alan,arkin,328232322,computernetworks,81
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 1:
+alan,arkin,328232322,csfundamentals,57
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 2:
+kim,basinger,987898980,csfundamentals,82
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 3:
+sandra,bulloc,707022000,clanguage,58
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 4:
+sandra,bulloc,707022000,csfundamentals,77
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 5:
+jim,carrey,006685034,computernetworks,78
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 6:
+jim,carrey,006685034,csfundamentals,98
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 7:
+jim,carrey,606685034,clanguage,82
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 8:
+yedid,cohen,208208208,computernetworks,98
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 9:
+tami,corach,543543545,clanguage,80
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 10:
+penelope,cruz,303913011,clanguage,99
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 11:
+penelope,cruz,303913011,computernetworks,99
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 12:
+penelope,cruz,303913011,csfundamentals,99
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 13:
+tony,curtis,595055022,clanguage,38
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 14:
+tony,curtis,595055022,computernetworks,25
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 15:
+danny,devito,185414152,clanguage,69
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 16:
+morgan,freeman,757365759,computernetworks,45
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 17:
+whoopi,goldberg,507555555,clanguage,49
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 18:
+tom,hanks,575871591,clanguage,79
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 19:
+tom,hanks,575871591,csfundamentals,72
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 20:
+anthony,hopkins,289328280,computernetworks,88
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 21:
+holly,hunter,409904655,clanguage,97
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 22:
+holly,hunter,409904655,computernetworks,81
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 23:
+holly,hunter,409904655,csfundamentals,70
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 24:
+angelina,jolie,300004530,clanguage,95
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 25:
+angelina,jolie,300004530,computernetworks,18
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 26:
+angelina,jolie,300004530,csfundamentals,0
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 27:
+grace,kelly,912792939,clanguage,89
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 28:
+grace,kelly,912792939,computernetworks,89
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 29:
+grace,kelly,912792939,csfundamentals,76
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 30:
+nicole,kidman,191149194,clanguage,29
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 31:
+nicole,kidman,191149194,computernetworks,87
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 32:
+nicole,kidman,191149194,csfundamentals,37
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 33:
+yedid,levi,432554665,csfundamentals,90
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 34:
+sophia,loren,616521611,clanguage,95
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 35:
+john,malkovich,161256146,clanguage,49
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 36:
+john,malkovich,161256146,computernetworks,68
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 37:
+john,malkovich,161256146,csfundamentals,83
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 38:
+demi,moore,373939467,clanguage,9
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 39:
+demi,moore,373939467,computernetworks,86
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 40:
+demi,moore,373939467,csfundamentals,74
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 41:
+jack,nicholson,949784994,clanguage,99
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 42:
+yedid,tzaiger,535354535,clanguage,80
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 0:
+alan,arkin,328232322,computernetworks,81
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 1:
+alan,arkin,328232322,csfundamentals,57
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 2:
+kim,basinger,987898980,csfundamentals,82
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 3:
+sandra,bulloc,707022000,clanguage,58
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 4:
+sandra,bulloc,707022000,csfundamentals,77
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 5:
+jim,carrey,006685034,computernetworks,78
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 6:
+jim,carrey,006685034,csfundamentals,98
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 7:
+jim,carrey,606685034,clanguage,82
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 8:
+yedid,cohen,208208208,computernetworks,98
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 9:
+tami,corach,543543545,clanguage,80
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 10:
+penelope,cruz,303913011,clanguage,99
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 11:
+penelope,cruz,303913011,computernetworks,99
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 12:
+penelope,cruz,303913011,csfundamentals,99
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 13:
+tony,curtis,595055022,clanguage,38
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 14:
+tony,curtis,595055022,computernetworks,25
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 15:
+danny,devito,185414152,clanguage,69
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 16:
+morgan,freeman,757365759,computernetworks,45
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 17:
+whoopi,goldberg,507555555,clanguage,49
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 18:
+tom,hanks,575871591,clanguage,79
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 19:
+tom,hanks,575871591,csfundamentals,72
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 20:
+anthony,hopkins,289328280,computernetworks,88
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 21:
+holly,hunter,409904655,clanguage,97
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 22:
+holly,hunter,409904655,computernetworks,81
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 23:
+holly,hunter,409904655,csfundamentals,70
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 24:
+angelina,jolie,300004530,clanguage,95
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 25:
+angelina,jolie,300004530,computernetworks,18
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 26:
+angelina,jolie,300004530,csfundamentals,0
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 27:
+grace,kelly,912792939,clanguage,89
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 28:
+grace,kelly,912792939,computernetworks,89
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 29:
+grace,kelly,912792939,csfundamentals,76
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 30:
+nicole,kidman,191149194,clanguage,29
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 31:
+nicole,kidman,191149194,computernetworks,87
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 32:
+nicole,kidman,191149194,csfundamentals,37
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 33:
+yedid,levi,432554665,csfundamentals,90
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 34:
+sophia,loren,616521611,clanguage,95
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 35:
+john,malkovich,161256146,clanguage,49
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 36:
+john,malkovich,161256146,computernetworks,68
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 37:
+john,malkovich,161256146,csfundamentals,83
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 38:
+demi,moore,373939467,clanguage,9
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 39:
+demi,moore,373939467,computernetworks,86
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 40:
+demi,moore,373939467,csfundamentals,74
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 41:
+jack,nicholson,949784994,clanguage,99
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 42:
+yedid,tzaiger,535354535,clanguage,80
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 0:
+alan,arkin,328232322,computernetworks,81
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 1:
+alan,arkin,328232322,csfundamentals,57
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 2:
+kim,basinger,987898980,csfundamentals,82
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 3:
+sandra,bulloc,707022000,clanguage,58
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 4:
+sandra,bulloc,707022000,csfundamentals,77
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 5:
+jim,carrey,006685034,computernetworks,78
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 6:
+jim,carrey,006685034,csfundamentals,98
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 7:
+jim,carrey,606685034,clanguage,82
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 8:
+yedid,cohen,208208208,computernetworks,98
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 9:
+tami,corach,543543545,clanguage,80
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 10:
+penelope,cruz,303913011,clanguage,99
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 11:
+penelope,cruz,303913011,computernetworks,99
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 12:
+penelope,cruz,303913011,csfundamentals,99
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 13:
+tony,curtis,595055022,clanguage,38
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 14:
+tony,curtis,595055022,computernetworks,25
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 15:
+danny,devito,185414152,clanguage,69
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 16:
+morgan,freeman,757365759,computernetworks,45
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 17:
+whoopi,goldberg,507555555,clanguage,49
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 18:
+tom,hanks,575871591,clanguage,79
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 19:
+tom,hanks,575871591,csfundamentals,72
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 20:
+anthony,hopkins,289328280,computernetworks,88
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 21:
+holly,hunter,409904655,clanguage,97
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 22:
+holly,hunter,409904655,computernetworks,81
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 23:
+holly,hunter,409904655,csfundamentals,70
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 24:
+angelina,jolie,300004530,clanguage,95
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 25:
+angelina,jolie,300004530,computernetworks,18
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 26:
+angelina,jolie,300004530,csfundamentals,0
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 27:
+grace,kelly,912792939,clanguage,89
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 28:
+grace,kelly,912792939,computernetworks,89
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 29:
+grace,kelly,912792939,csfundamentals,76
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 30:
+nicole,kidman,191149194,clanguage,29
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 31:
+nicole,kidman,191149194,computernetworks,87
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 32:
+nicole,kidman,191149194,csfundamentals,37
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 33:
+yedid,levi,432554665,csfundamentals,90
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 34:
+sophia,loren,616521611,clanguage,95
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 35:
+john,malkovich,161256146,clanguage,49
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 36:
+john,malkovich,161256146,computernetworks,68
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 37:
+john,malkovich,161256146,csfundamentals,83
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 38:
+demi,moore,373939467,clanguage,9
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 39:
+demi,moore,373939467,computernetworks,86
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 40:
+demi,moore,373939467,csfundamentals,74
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 41:
+jack,nicholson,949784994,clanguage,99
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
+Line 42:
+yedid,tzaiger,535354535,clanguage,80
+
+ERORR 0: first name is not valid.
+ERORR 1: last name is not valid.
+ERORR 2: id is not valid.
+ERORR 3: course is not valid.
+ERORR 4: grade is not valid.
+===================================
