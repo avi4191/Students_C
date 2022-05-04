@@ -113,18 +113,23 @@ int filterByFirstName(Student* student, char op, char* value) {
 	case bigger:
 		if (strcmp(student->firstName, value) > 0)
 			return 1;
+		break;
 	case smaller:
 		if (strcmp(student->firstName, value) < 0)
 			return 1;
+		break;
 	case biggerOrEqual:
 		if (strcmp(student->firstName, value) >= 0)
 			return 1;
+		break;
 	case smallerOrEqual:
 		if (strcmp(student->firstName, value) <= 0)
 			return 1;
+		break;
 	case notEqual:
 		if (strcmp(student->firstName, value) != 0)
 			return 1;
+		break;
 	}
 	return 0;
 }
@@ -142,11 +147,11 @@ int filterByLastName(Student* student, char op, char* value) {
 	case smaller:
 		if (strcmp(student->lastName, value) < 0)
 			return 1;
-			break;
+		break;
 	case biggerOrEqual:
 		if (strcmp(student->lastName, value) >= 0)
 			return 1;
-			break;
+		break;
 	case smallerOrEqual:
 		if (strcmp(student->lastName, value) <= 0)
 			return 1;
@@ -189,128 +194,127 @@ int filterByID(Student* student, char op, char* value) {
 	return 0;
 }
 int filterByGrade1(Student* student, char op, char* value) {
-	char ret = 0, gradeIndex = 0;
+	char gradeIndex = 0;
 	switch (op)
 	{
 	case equal:
 		if (student->grades[gradeIndex] == *value)
-			ret = 1;
+			return 1;
 		break;
 	case bigger:
 		if (student->grades[gradeIndex] > *value)
-			ret = 1;
+			return 1;
 		break;
 	case smaller:
 		if (student->grades[gradeIndex] < *value)
-			ret = 1;
+			return 1;
 		break;
 	case biggerOrEqual:
 		if (student->grades[gradeIndex] >= *value)
-			ret = 1;
+			return 1;
 		break;
 	case smallerOrEqual:
 		if (student->grades[gradeIndex] <= *value)
-			ret = 1;
+			return 1;
 		break;
 	case notEqual:
 		if (student->grades[gradeIndex] != *value)
-			ret = 1;
+			return 1;
 		break;
 	}
-	return ret;
+	return 0;
 }
 int filterByGrade2(Student* student, char op, char* value) {
-	char ret = 0, gradeIndex = 1;
+	char gradeIndex = 1;
 	switch (op)
 	{
 	case equal:
 		if (student->grades[gradeIndex] == *value)
-			ret = 1;
+			return 1;
 		break;
 	case bigger:
 		if (student->grades[gradeIndex] > *value)
-			ret = 1;
+			return 1;
 		break;
 	case smaller:
 		if (student->grades[gradeIndex] < *value)
-			ret = 1;
+			return 1;
 		break;
 	case biggerOrEqual:
 		if (student->grades[gradeIndex] >= *value)
-			ret = 1;
+			return 1;
 		break;
 	case smallerOrEqual:
 		if (student->grades[gradeIndex] <= *value)
-			ret = 1;
+			return 1;
 		break;
 	case notEqual:
 		if (student->grades[gradeIndex] != *value)
-			ret = 1;
+			return 1;
 		break;
 	}
-	return ret;
+	return 0;
 }
 int filterByGrade3(Student* student, char op, char* value) {
-	char ret = 0, gradeIndex = 2;
+	char gradeIndex = 2;
 	switch (op)
 	{
 	case equal:
 		if (student->grades[gradeIndex] == *value)
-			ret = 1;
+			return 1;
 		break;
 	case bigger:
 		if (student->grades[gradeIndex] > *value)
-			ret = 1;
+			return 1;
 		break;
 	case smaller:
 		if (student->grades[gradeIndex] < *value)
-			ret = 1;
+			return 1;
 		break;
 	case biggerOrEqual:
 		if (student->grades[gradeIndex] >= *value)
-			ret = 1;
+			return 1;
 		break;
 	case smallerOrEqual:
 		if (student->grades[gradeIndex] <= *value)
-			ret = 1;
+			return 1;
 		break;
 	case notEqual:
 		if (student->grades[gradeIndex] != *value)
-			ret = 1;
+			return 1;
 		break;
 	}
-	return ret;
+	return 0;
 }
 int filterByAverage(Student* student, char op, float* value) {
-	char ret = 0, gradeIndex = 0;
 	switch (op)
 	{
 	case equal:
 		if (student->average == *value)
-			ret = 1;
+			return 1;
 		break;
 	case bigger:
 		if (student->average > *value)
-			ret = 1;
+			return 1;
 		break;
 	case smaller:
 		if (student->average < *value)
-			ret = 1;
+			return 1;
 		break;
 	case biggerOrEqual:
 		if (student->average >= *value)
-			ret = 1;
+			return 1;
 		break;
 	case smallerOrEqual:
 		if (student->average <= *value)
-			ret = 1;
+			return 1;
 		break;
 	case notEqual:
 		if (student->average != *value)
-			ret = 1;
+			return 1;
 		break;
 	}
-	return ret;
+	return 0;
 }
 
 void printSelected(Manager* manager, int(*fn)(Student*, char, void*), char op, void* val) {

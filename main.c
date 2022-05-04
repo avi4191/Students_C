@@ -22,14 +22,15 @@ void main() {
 }
 
 void getActionsFromUser(Manager* manager) {
-	char input[400];
-	while (1) {
+	char input[MAXLINE];
+	while (TRUE) {
 		printf("\n\n->  ");
-		fgets(input, 399, stdin);
+		fgets(input, MAXLINE-1, stdin);
 		input[strlen(input) - 1] = '\0';
 
 		cleanSpaces(input);
 		toLowerCase(input);
+
 		if (strcmp(input, "quit") == 0)
 			quit(manager);
 		else if (strcmp(input, "print") == 0)
@@ -46,6 +47,5 @@ void getActionsFromUser(Manager* manager) {
 			printf("The command is invalid!\n");
 			printHelp();
 		}
-
 	}
 }

@@ -29,14 +29,14 @@ int createListFromTable(Manager* manager) {
 }
 
 int insertLine(char* line, int numLine, FILE* log, Manager* manager) {
-	//char fname[MAXNAME + 1], lname[MAXNAME + 1], id[MAXNAME + 1], course[MAXNAME+1], grade[MAXNAME+1],
 	char *column_p[5],* token, temp[MAXLINE + 1];
 	unsigned char idCourse, erorrs[6], i = 0;
 	Student* result = NULL;
+
+	// parsers of the line
 	cleanSpaces(line);
 	toLowerCase(line);
 	strcpy(temp, line);
-	// parsers of the line
 	token = strtok(temp, ",");
 	while (token!=NULL)
 	{
@@ -54,11 +54,14 @@ int insertLine(char* line, int numLine, FILE* log, Manager* manager) {
 	erorrs[gradeErorr] = isValidGrade(column_p[grade]);
 	erorrs[namesNotEqualErorr] = 1;
 
-	if (erorrs[firstNameErorr]&&erorrs[lastNameErorr] &&erorrs[IDErorr]&&erorrs[courseErorr]&&erorrs[gradeErorr]) {//is valid case
+	//Inserting the data into place
+	if (erorrs[firstNameErorr]&&erorrs[lastNameErorr] &&erorrs[IDErorr]&&erorrs[courseErorr]&&erorrs[gradeErorr]) {//all data is valid
 		result = findById(manager, column_p[ID]);//check if exist?
-		if (result == NULL)//add new
+		if (result == NULL)//no exist, add new
 			result = addStudent(manager, column_p[firstName], column_p[lastName], column_p[ID], TRUE);
-		else if (strcmp(column_p[firstName], result->firstName) != 0 && strcmp(column_p[lastName], result->lastName) != 0) {//if names not equal
+
+		////else = exist, If the names in the row and the list names are not equal
+		else if (strcmp(column_p[firstName], result->firstName) != 0 && strcmp(column_p[lastName], result->lastName) != 0) {
 			erorrs[namesNotEqualErorr] = 0;
 			logger(log, erorrs, line, numLine);
 			return 0;

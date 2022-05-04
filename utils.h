@@ -1,8 +1,9 @@
 #include "validation.h"
 
-
+//Changes the string by reference, removes all spaces
 void cleanSpaces(char*);
 
+//Changes the string by reference, changes all the letters to lowercase
 void toLowerCase(char*);
 
 //search student with id in list
@@ -21,8 +22,11 @@ void printAll(Manager* manager);
 OperatorCodes getOperator(char* str);
 
 //parameters: name of field 
-//return: code of field
+//return: code of field or -1 if not valid field
 FieldCodes getCodeByField(char* str);
 
+//Prints the "log.txt" file from the program folder
 void printLog(void);
+
+//Prints the "help.txt" file from the program folder
 void printHelp(void);
