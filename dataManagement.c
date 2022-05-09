@@ -15,7 +15,7 @@ int createListFromTable(Manager* manager) {
 	while (fgets(line, MAXLINE, input) != NULL)
 	{
 		checkLongLine(line, input);
-		line[strlen(line - 1)] = '\0';
+		line[strlen(line)-1] = '\0';
 		if (insertLine(line, numline++, log, manager))
 			successLines++;
 	}
@@ -126,7 +126,7 @@ void editNames(Manager* manager, Student* student, char* fname, char* lname) {
 		student->firstName = tempFN;
 	}
 	if (*lname != 0 && strcmp(student->lastName, lname) != 0) {
-		if (strcmp(student->lastName, lname) > 0 || strcmp(lname, student->next->lastName) > 0) {//ΰν ιω φεψκ αξιεο ηγω
+		if (strcmp(student->lastName, lname) > 0 || strcmp(lname, student->next->lastName) > 0) {//Γ Γ­ Γ©ΓΉ Γ¶Γ¥ΓΈΓª Γ΅Γ®Γ©Γ¥Γ― Γ§Γ£ΓΉ
 			Student* ptr;
 			ptr = findPrev(manager, student);
 			if (ptr == NULL) {
@@ -194,7 +194,7 @@ void setCommand(Manager* manager, char* input) {
 			printf("\'%s\' is not valid field!", token);
 			return;
 		}
-		token = strtok(NULL, ",");//μαγεχ ωδεΰ μεχη ΰϊ δεμμιε δΰηψεο ΰτιμε ωΰιο ΰηψιε τριχ
+		token = strtok(NULL, ",");//Γ¬Γ΅Γ£Γ¥Γ· ΓΉΓ¤Γ¥Γ  Γ¬Γ¥Γ·Γ§ Γ ΓΊ Γ¤Γ¥Γ¬Γ¬Γ©Γ¥ Γ¤Γ Γ§ΓΈΓ¥Γ― Γ Γ΄Γ©Γ¬Γ¥ ΓΉΓ Γ©Γ― Γ Γ§ΓΈΓ©Γ¥ Γ΄Γ±Γ©Γ·
 		strcpy(arr[temp], token);
 		token = strtok(NULL, "=");
 	}
