@@ -194,7 +194,7 @@ void setCommand(Manager* manager, char* input) {
 			printf("\'%s\' is not valid field!", token);
 			return;
 		}
-		token = strtok(NULL, ",");
+		token = strtok(NULL, ",");//לבדוק שהוא לוקח את הולליו האחרון אפילו שאין אחריו פסיק
 		strcpy(arr[temp], token);
 		token = strtok(NULL, "=");
 	}
