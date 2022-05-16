@@ -244,7 +244,7 @@ void setCommand(Manager* manager, char* input) {
 	}
 
 	//update grades
-	for (int i = 4; i < 7; i++)
+	for (int i = 3; i < 6; i++)
 		if (arr[i][0] != 0)
 			updateGrade(result, i - 3, atoi(arr[i]));
 	manager->changes += 1;
