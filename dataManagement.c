@@ -66,7 +66,7 @@ int insertLine(char* line, int numLine, FILE* log, Manager* manager) {
 			logger(log, erorrs, line, numLine);
 			return 0;
 		}
-		updateGrade(result, idCourse, atoi(column_p[grade]));
+		updateGrade(result, idCourse-1, atoi(column_p[grade]));
 	}
 	else { // is not valid case
 		logger(log, erorrs, line, numLine);//erorr 1-5
