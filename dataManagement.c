@@ -112,7 +112,7 @@ Student* addStudent(Manager* manager, char* fname, char* lname, char* id, unsign
 
 void updateGrade(Student* student, int numOfCourse, int grade) {
 
-	student->grades[numOfCourse - 1] = grade;
+	student->grades[numOfCourse] = grade;
 	student->average = getAvgOfStudent(student);
 }
 
